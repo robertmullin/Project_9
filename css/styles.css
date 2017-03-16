@@ -19,62 +19,108 @@ a {
   font-weight: 400; 
 }
 
-div {
-    clear: both;
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-header {
+.topbar {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #0288D1;
-    width: 100%;
-    height: 70px;
-}
-
-ul,
-li {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: #0288D1;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
 
-li {
-   width: 30px;
-   height: 30px;    
-}
-
-.container {
+.title {
     display: flex;
+    justify-content: flex-start;
+    width: 100%;
 }
 
-.avatar {
-    width: 30px;
-    height: 30px;
-    border-radius: 30px;
+.header_name {
+    align-self: center;
+    color: white;
+    font-size: 1.1em;
 }
 
 #title_part_one {
-    justify-content: flex-start center;
-    
+    padding-left: 1em;
+    font-weight: bolder;
+}
+
+#borderleft {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    width: 175px;
+    height: 45px;
+    border-left: 1px solid darkblue;
+    padding-left: 20px;
+}
+
+.name {
+    align-self: center;
+    width: 150px;
+    padding: .5em;
+    color: white;
+    text-align: center;
+    font-size: .86em;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    align-self: center; 
+}
+
+.icondiv {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    height: 70px;
+    width: 100%; 
+}
+
+.icon_badge {
+    align-self: center;
+    width: 1.8em;
+    height: 1.8em;
+    margin-right: 10px;
 }
 
 .main-nav {
-    display: inline-flex;
     position: fixed;
-    width: 60px;
+    top: 70px;
+    left: 0;
+    width: 70px;
     height: 100%;
     background-color: #0288D1;
 }
 
-.nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 300px;
-    padding: 15px 0px;
-    margin: 0 auto;
+
+.main-nav li {
+   width: 30px;
+   height: 30px;    
+}
+
+.main-nav a {
+    display: block;
+    text-align: center;
+    padding: 20px; 
+    transition: all 0.3s ease; 
+    color: white; 
+    font-size: 30px;
+}
+
+.active {
+    border-left: 4px solid lightgreen;
 }
 
 .search-bar {
@@ -86,7 +132,7 @@ li {
 }
 
 input[type=search] {
-    width: 20%;
+    width: 40%;
     height: 40px;
     align-self: center;
     background-color: white;
@@ -104,13 +150,14 @@ input[type=search] {
 }
 
 input[type=search]:focus {
-    width: 35%;
+    width: 60%;
+    background-image: url(../images/searchiconopacity.svg);
 }
 
 .content_area {
     display: block;
-    
-    margin-left: 60px;
+    margin-left: 70px;
+    margin-top: 70px;
 }
 
  /* The alert message box */
@@ -119,7 +166,7 @@ input[type=search]:focus {
     align-self: auto;
     padding: 15px;
     background-color: #0288D1;
-    color: darkblue;
+    color: white;
     margin: 0 auto;
     margin-bottom: .5em; 
     border-radius: 5px;
@@ -128,7 +175,7 @@ input[type=search]:focus {
 /* The close button */
 .closebtn {
     margin-left: 15px;
-    color: darkblue;
+    color: white;
     font-weight: bold;
     float: right;
     font-size: 22px;
@@ -139,7 +186,7 @@ input[type=search]:focus {
 
 /* When moving the mouse over the close button */
 .closebtn:hover {
-    color: white;
+    color: darkblue;
 }
 
 .chart-1 {

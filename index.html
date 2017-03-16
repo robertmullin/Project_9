@@ -10,25 +10,37 @@
     <title>Web App</title>
 </head>
 <body>
+   <div class="wrapper">
     <header>
-        <div class="header_name"><span id="title_part_one">Your</span><span id="title_part_two">App</span></div>
+      
+       <ul class="topbar">
         
-        <div class="icon_badge"><img src="images/icon-bell.svg" alt=""><a href=""></a></img></div>
+        <div class="title">
+             <li class="header_name"><span id="title_part_one">Your</span><span id="title_part_two">App&#8482;</span></li>
+        </div>
         
-        <div class="avatar"><a href=""><img class="avatar" src="images/beaker_avatar.jpg" alt=""></a></img></div>
+        <div class="icondiv">
+            <li class="icon_badge"><img src="images/icon-bell.svg" alt=""><a href=""></a></img></li>
+        </div>
         
-        <div class="name"><a href="">Beaker Muppet</a></div>
+        <div id="borderleft">
+            <li class="avatar"><a href=""><img class="avatar" src="images/beaker_avatar.jpg" alt=""></a></img></li>
+
+            <li class="name"><a href="">Beaker Muppet</a></li>
+        </div>
+       </ul>   
+        
     </header>
     
     
     
     <nav class="main-nav" role="navigation">
-       <ul class="nav">
-        <li><a href=""><img src="images/icon-dashboard.svg" alt="Dashboard"></a></li>
-        <li><a href=""><img src="images/icon-members.svg" alt="Members"></a></li>
-        <li><a href=""><img src="images/icon-visits.svg" alt="Visits"></a></li>
-        <li><a href=""><img src="images/icon-settings.svg" alt="Settings"></a></li>
-       </ul>    
+       
+        <a href="" class="active"><img src="images/icon-dashboard.svg" alt="Dashboard"></a>
+        <a href=""><img src="images/icon-members.svg" alt="Members"></a>
+        <a href=""><img src="images/icon-visits.svg" alt="Visits"></a><
+        <a href=""><img src="images/icon-settings.svg" alt="Settings"></a>
+          
     </nav>
     
     <div class="content_area">
@@ -50,5 +62,7 @@
     </div>
     
     </div> <!--- end content_area -->
+    
+    </div> <!--- end container --->
 </body>
 </html>
