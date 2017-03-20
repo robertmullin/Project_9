@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
+    
+    
     <title>Web App</title>
+    
 </head>
 <body>
    <div class="wrapper">
-    <header>
+    
+     <header>
       
        <ul class="topbar">
         
@@ -57,12 +59,78 @@
        <div class="container">
        
         <div class="chart-1">
+          
+           <div class="buttons">
+               
+             <div class="legend"> 
+               <h2 class="chartname">Traffic</h2>
+             </div> 
+              
             
-        </div>     
+              <div class="tabs">   
+               <button id="monthly">Monthly</button>
+               <button id="weekly" class="buttonactive">Weekly</button>
+               <button id="daily">Daily</button>
+               <button id="hourly">Hourly</button>
+              </div>   
+               
+            </div>
+           
+            <canvas id="lineChart" height="200" width="320"></canvas>
+            
+        </div>   
+        
+        <div class="chart-2">
+        
+             <div class="legend"> 
+               <h2 class="chartname">Daily Traffic</h2>
+             </div> 
+        
+            <div class="dailytraffic">
+                <canvas id="bargraph" height="200" width="320"></canvas>
+            </div>
+        
+        </div>
+        
+        <div class="mobileusers">
+            <canvas id="mobile_chart" width="200" height="200">
+                
+            </canvas>
+        </div>  
+        
+        <div class="socialstats">
+            <div class="twitter"></div>
+            <div class="facebook"></div>
+            <div class="googleplus"></div>
+            <div class="reddit"></div>
+            <div class="instagram"></div>
+            <div class="youtube"></div>
+        </div> 
+        
+        <div class="newmembers">
+            
+        </div>
+        
+        <div class="activity">
+            
+        </div> 
+        
+        <div class="message">
+            
+        </div>
+        
+        <div class="settings">
+            
+        </div>
+        
     </div>
     
     </div> <!--- end content_area -->
     
     </div> <!--- end container --->
+    
+    <script src="chartjs/Chart.min.js"></script>
+    <script src="chartjs/main.js"></script>
+
 </body>
 </html>
