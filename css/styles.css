@@ -128,7 +128,7 @@ a {
 .main-nav a {
     display: block;
     text-align: center;
-    padding: 20px; 
+    padding: 16px; 
     transition: all 0.3s ease; 
     color: white; 
     font-size: 30px;
@@ -286,8 +286,7 @@ button {
 .mobileusers {
     background-color: ;
     align-self: auto;
-    width: 98%;
-    height: 500px;
+    width: 100%;
     margin: 0 auto;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -296,22 +295,73 @@ button {
 /* Social Stats */
 
 .socialstats {
-    background-color: #0288D1;
-    align-self: auto;
     width: 98%;
-    height: 500px;
     margin: 0 auto;
     border-radius: 5px;
+}
+
+.subscribers {
+    display: inline-block;
+    width: 70%;
+    height: 15px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.fa {
+    display: inline-block;
+    padding: 20px;
+    font-size: 30px;
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
     margin-bottom: 10px;
+}
+
+.fa a {
+    float: right;
+    font: sans-serif;
+    text-align: center;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
 }
 
 /* New Members */
 
 .newmembers {
-    background-color: #0288D1;
+    
     align-self: auto;
     width: 98%;
-    height: 500px;
     margin: 0 auto;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -332,19 +382,42 @@ button {
 /* Message User */
 
 .message {
-    background-color: #0288D1;
     align-self: auto;
-    width: 98%;
+    width: 100%;
     height: 500px;
     margin: 0 auto;
     border-radius: 5px;
     margin-bottom: 10px;
+}
+
+input, 
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    resize: vertical;
+    text-decoration: none;
+}
+
+.sendmessage {
+    background-color: #0288D1;
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
 }
 
 /* Settings */
 
 .settings {
-    background-color: #0288D1;
     align-self: auto;
     width: 98%;
     height: 500px;
@@ -352,3 +425,91 @@ button {
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
+.switch input {
+    display:none;
+}
+
+.switch {
+      position: relative;
+      display: inline-block;
+      width: 120px;
+      height: 40px;
+}
+
+.slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 34px;
+}
+
+.slider:before {
+      position: absolute;
+      content: attr(data-off);
+      color: white;
+      height: 32px;
+      width: 32px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 50%;
+}
+
+input:checked + .slider {
+      background-color: #2196F3;
+}
+
+input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(80px);
+  -ms-transform: translateX(80px);
+  transform: translateX(80px);
+}
+
+/*Toggle YES/NO?? */
+
+input.cmn-toggle-yes-no + label {
+  padding: 2px;
+  width: 120px;
+  height: 60px;
+}
+input.cmn-toggle-yes-no + label:before,
+input.cmn-toggle-yes-no + label:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+}
+input.cmn-toggle-yes-no + label:before {
+  background-color: #dddddd;
+  content: attr(data-off);
+  transition: transform 0.5s;
+  backface-visibility: hidden;
+}
+input.cmn-toggle-yes-no + label:after {
+  background-color: #8ce196;
+  content: attr(data-on);
+  transition: transform 0.5s;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+

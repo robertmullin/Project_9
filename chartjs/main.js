@@ -96,3 +96,27 @@ let lineChart = new Chart(CHART, {
 
 // Pie Chart
 
+const PIE = document.getElementById("mobilechart").getContext("2d");
+    var mobileChart = new Chart(PIE, {
+        type: 'doughnut',
+        data: {
+            labels: ['Phones','Tablets','Desktops','Consoles','Laptops'],
+            datasets: [
+            {
+                data: [30,20,15,5,30],
+                backgroundColor: ['#73b0be','#7EBEA2','#7477BF','#4c4b71','#6699ff'],
+                hoverBackgroundColor: ['','','','','']
+            }
+            ]},
+        
+        options: {
+            elements: {
+                arc: {
+                    borderWidth: 0
+                }
+            },
+            legend: {
+                display: false
+            }
+        }
+});

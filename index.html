@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     
     
@@ -92,36 +93,179 @@
         
         </div>
         
-        <div class="mobileusers">
-            <canvas id="mobile_chart" width="200" height="200">
-                
-            </canvas>
-        </div>  
+        <div class="chart-3">
+        
+            <div class="legend"> 
+               <h2 class="chartname">Mobile Users</h2>
+            </div> 
+               
+            <div class="mobileusers">
+                <canvas id="mobilechart" height="200" width="320"></canvas>
+            </div>  
+        
+        </div>
         
         <div class="socialstats">
-            <div class="twitter"></div>
-            <div class="facebook"></div>
-            <div class="googleplus"></div>
-            <div class="reddit"></div>
-            <div class="instagram"></div>
-            <div class="youtube"></div>
+           
+           <div class="legend"> 
+               <h2 class="chartname">Social Stats</h2>
+           </div> 
+           
+            <div class="socialcard">
+            
+                <a href="https://www.twitter.com" class="fa fa-twitter"></a><h4 class="subscribers">10,345</h4>
+            
+            </div>
+            
+            <div class="socialcard">
+            
+                <a href="https://www.facebook.com" class="fa fa-facebook"></a><h4 class="subscribers">8,739</h4>
+            
+            </div>
+            
+            <div class="socialcard">
+            
+                <a href="https://plus.google.com/" class="fa fa-google"></a><h4 class="subscribers">2,530</h4>
+            
+            </div>
+            
+            <div class="socialcard">
+            
+                <a href="https://www.reddit.com" class="fa fa-reddit"></a><h4 class="subscribers">1,356</h4>
+            
+            </div>
+            
+            <div class="socialcard">
+            
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a><h4 class="subscribers">5,688</h4>
+            
+            </div>
+            
+            <div class="socialcard">
+            
+                <a href="https://www.youtube.com" class="fa fa-youtube"></a><h4 class="subscribers">11,430</h4>
+            
+            </div>
+            
         </div> 
         
+<!------------------------------- NEW MEMBERS -------------------------------->
+        
         <div class="newmembers">
-            
+            <div class="legend"> 
+               <h2 class="chartname">New Members</h2>
+           </div> 
+           
+           <ul class="memberlist">
+              
+               <li class="member">
+                  
+                   <img src="" alt="" class="memberimg"></img>
+                      
+                   <div class="membercontact">
+                   
+                    <h4 class="membername">Rizzo</h4>
+                    <h4 class="memberemail"><a href="mailto:rizzo@muppetshot.com">rizzo@muppetshot.com</a></h4>
+                    
+                    <span class="dateposted">3/20/2017</span>
+                    
+                   </div>
+                   
+               </li>
+               
+               <li class="member">
+                  
+                   <img src="" alt="" class="memberimg"></img>
+                      
+                   <div class="membercontact">
+                   
+                    <h4 class="membername">Rizzo</h4>
+                    <h4 class="memberemail"><a href="mailto:rizzo@muppetshot.com">rizzo@muppetshot.com</a></h4>
+                    
+                    <span class="dateposted">3/20/2017</span>
+                    
+                   </div>
+                   
+               </li>
+               
+               <li class="member">
+                  
+                   <img src="" alt="" class="memberimg"></img>
+                      
+                   <div class="membercontact">
+                   
+                    <h4 class="membername">Rizzo</h4>
+                    <h4 class="memberemail"><a href="mailto:rizzo@muppetshot.com">rizzo@muppetshot.com</a></h4>
+                    
+                    <span class="dateposted">3/20/2017</span>
+                    
+                   </div>
+                   
+               </li>
+               
+               <li class="member">
+                  
+                   <img src="" alt="" class="memberimg"></img>
+                      
+                   <div class="membercontact">
+                   
+                    <h4 class="membername">Rizzo</h4>
+                    <h4 class="memberemail"><a href="mailto:rizzo@muppetshot.com">rizzo@muppetshot.com</a></h4>
+                    
+                    <span class="dateposted">3/20/2017</span>
+                    
+                   </div>
+                   
+               </li>
+               
+           </ul>
+           
         </div>
         
         <div class="activity">
             
+            
+            
         </div> 
         
         <div class="message">
-            
+           <div class="legend"> 
+               <h2 class="chartname">Message User</h2>
+           </div> 
+           
+            <form class="form">
+                
+                <label for="usersearch"></label>
+                <input type="search" id="searchuser" name="usersearch" placeholder="Search for user...">
+
+                <label for="message"></label>
+                <textarea id="message" name="message" placeholder="Message for user..." style="height:200px"></textarea>
+
+                <button class="sendmessage" value="Submit">Send</button>
+
+            </form>
+          
         </div>
         
         <div class="settings">
-            
-        </div>
+            <div class="legend"> 
+               <h2 class="chartname">Settings</h2>
+           </div> 
+           
+           <label class="switch">
+              <input type="checkbox">
+              <div class="slider"></div>
+           </label>
+           
+           <label class="switch" for="cmn-toggle-7" data-on="Yes" data-off="No">
+              <input type="checkbox">
+              <div class="slider"></div>
+           </label>
+           
+           <div class="switch">
+              <input id="cmn-toggle-7" class="cmn-toggle cmn-toggle-yes-no" type="checkbox">
+              <label for="cmn-toggle-7" data-on="Yes" data-off="No"></label>
+            </div>  
         
     </div>
     
