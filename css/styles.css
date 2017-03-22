@@ -237,6 +237,7 @@ input[type=search]:focus {
 .chartname {
     margin: 10px;
     text-align: center;
+    text-transform: uppercase;
     align-self: center;
     font-size: 1.6em; 
 }
@@ -296,6 +297,7 @@ button {
 
 .socialstats {
     width: 98%;
+    height: 1000px;
     margin: 0 auto;
     border-radius: 5px;
 }
@@ -359,9 +361,9 @@ button {
 /* New Members */
 
 .newmembers {
-    
     align-self: auto;
     width: 98%;
+    height: 1000px;
     margin: 0 auto;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -370,7 +372,6 @@ button {
 /* Recent Activity */
 
 .activity {
-    background-color: #0288D1;
     align-self: auto;
     width: 98%;
     height: 500px;
@@ -379,12 +380,74 @@ button {
     margin-bottom: 10px;
 }
 
+.members {
+    list-style: none;
+    width: 100%;
+    padding: 0px;
+    overflow: auto;
+}
+
+.member {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.imgcontainer {
+    background-color: blue;
+    display: flex;
+    width: 25%;
+    height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardcontainer {
+    background-color: green;
+    display: flex;
+    width: 75%;
+    height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.emailcontainer {
+    background-color: red;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.memberpic {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.membername {
+    width: 100%;
+    text-align: center;
+    margin: 10px 15px;
+}
+
 /* Message User */
 
 .message {
+    display: block;
     align-self: auto;
     width: 100%;
-    height: 500px;
+    height: 375px;
     margin: 0 auto;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -413,103 +476,185 @@ textarea {
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
+    text-transform: uppercase;
 }
 
 /* Settings */
 
 .settings {
+    display: block;
     align-self: auto;
     width: 98%;
-    height: 500px;
+    height: 375px;
     margin: 0 auto;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
-.switch input {
-    display:none;
+.settings h4 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .switch {
-      position: relative;
-      display: inline-block;
-      width: 120px;
-      height: 40px;
+	position: relative;
+	display: block;
+	vertical-align: top;
+	width: 100px;
+	height: 30px;
+	padding: 3px;
+	margin: 0 auto;
+	background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);
+	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
+	border-radius: 18px;
+	box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+	box-sizing:content-box;
+    margin-bottom: 10px;
 }
 
-.slider {
-      position: absolute;
-      cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #ccc;
-      -webkit-transition: .4s;
-      transition: .4s;
-      border-radius: 34px;
+.switch-input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	box-sizing:content-box;
 }
 
-.slider:before {
-      position: absolute;
-      content: attr(data-off);
-      color: white;
-      height: 32px;
-      width: 32px;
-      left: 4px;
-      bottom: 4px;
-      background-color: white;
-      -webkit-transition: .4s;
-      transition: .4s;
-      border-radius: 50%;
+.switch-label {
+	position: relative;
+	display: block;
+	height: inherit;
+	font-size: 10px;
+	text-transform: uppercase;
+	background: #eceeef;
+	border-radius: inherit;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+	box-sizing:content-box;
 }
 
-input:checked + .slider {
-      background-color: #2196F3;
+.switch-label:before, .switch-label:after {
+	position: absolute;
+	top: 50%;
+	margin-top: -.5em;
+	line-height: 1;
+	-webkit-transition: inherit;
+	-moz-transition: inherit;
+	-o-transition: inherit;
+	transition: inherit;
+	box-sizing:content-box;
 }
 
-input:focus + .slider {
-      box-shadow: 0 0 1px #2196F3;
+.switch-label:before {
+	content: attr(data-off);
+	right: 11px;
+	color: #aaaaaa;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.5);
 }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(80px);
-  -ms-transform: translateX(80px);
-  transform: translateX(80px);
+.switch-label:after {
+	content: attr(data-on);
+	left: 11px;
+	color: #fff;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+	opacity: 0;
 }
 
-/*Toggle YES/NO?? */
-
-input.cmn-toggle-yes-no + label {
-  padding: 2px;
-  width: 120px;
-  height: 60px;
+.switch-input:checked ~ .switch-label:before {
+	opacity: 0;
 }
-input.cmn-toggle-yes-no + label:before,
-input.cmn-toggle-yes-no + label:after {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  color: #fff;
-  font-family: "Roboto Slab", serif;
-  font-size: 20px;
-  text-align: center;
-  line-height: 60px;
+.switch-input:checked ~ .switch-label:after {
+	opacity: 1;
 }
-input.cmn-toggle-yes-no + label:before {
-  background-color: #dddddd;
-  content: attr(data-off);
-  transition: transform 0.5s;
-  backface-visibility: hidden;
-}
-input.cmn-toggle-yes-no + label:after {
-  background-color: #8ce196;
-  content: attr(data-on);
-  transition: transform 0.5s;
-  transform: rotateY(180deg);
-  backface-visibility: hidden;
+.switch-handle {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 28px;
+	height: 28px;
+	background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+	background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+	border-radius: 100%;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
+.switch-label, .switch-handle {
+	transition: All 0.3s ease;
+	-webkit-transition: All 0.3s ease;
+	-moz-transition: All 0.3s ease;
+	-o-transition: All 0.3s ease;
+}
+
+.switch-flat {
+	padding: 0;
+	background: #FFF;
+	background-image: none;
+}
+.switch-flat .switch-label {
+	background: #fff;
+	border: solid 2px #eceeef;
+	box-shadow: none;
+}
+.switch-flat .switch-label:after {
+	color: #0288D1;
+}
+.switch-flat .switch-handle {
+	top: 6px;
+	left: 6px;
+	background: #dadada;
+	width: 22px;
+	height: 22px;
+	box-shadow: none;
+}
+.switch-flat .switch-handle:before {
+	background: #eceeef;
+}
+.switch-flat .switch-input:checked ~ .switch-label {
+	background: #fff;
+	border-color: #0288D1;
+}
+.switch-flat .switch-input:checked ~ .switch-handle {
+	left: 72px;
+	background: #0288D1;
+	box-shadow: none;
+}
+
+.timezone {
+    width: 100%;
+    height: 40px;
+    align-self: center;
+    background-color: white;
+    padding: 0px 10px;
+    border-radius: 5px;
+    margin: 15px 0px;
+}
+
+.savebutton {
+    background-color: #0288D1;
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cancelbutton {
+    background-color: #0288D1;
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
