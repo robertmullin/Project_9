@@ -1,5 +1,6 @@
-/* color light #448AFF */
-/* color dark #0288D1 */
+/* color light #0288D1 */
+/* color dark #4D4C72 */
+/* color dark #7477BF */
 
 /*
 * { outline: 2px dotted red }
@@ -30,10 +31,6 @@ a {
   font-weight: 400; 
 }
 
-.wrapper {
-   
-}
-
 /* Notification Bar */
 
 .topbar {
@@ -42,7 +39,7 @@ a {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #0288D1;
+    background-color: #7477BF;
     height: 70px;
     width: 100%;
     position: fixed;
@@ -116,7 +113,7 @@ a {
     left: 0;
     width: 70px;
     height: 100%;
-    background-color: #0288D1;
+    background-color: #4D4C72;
 }
 
 
@@ -184,7 +181,7 @@ input[type=search]:focus {
     width: 100%;
     align-self: auto;
     padding: 15px;
-    background-color: #0288D1;
+    background-color: #7477BF;
     color: white;
     margin: 0 auto;
     margin-bottom: .5em; 
@@ -217,7 +214,7 @@ input[type=search]:focus {
 }
 
 #lineChart {
-    border: 1px solid black;
+    border: 1px solid #4D4C72;
 }
 
 .buttons {
@@ -278,8 +275,7 @@ button {
 }
 
 #bargraph {
-    border: 1px solid black;
-    padding: 10px;
+    border: 1px solid #4D4C72;
 }
 
 /* Mobile Users Chart */
@@ -297,148 +293,201 @@ button {
 
 .socialstats {
     width: 98%;
-    height: 1000px;
+    height: auto;
     margin: 0 auto;
     border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
 }
 
-.subscribers {
-    display: inline-block;
-    width: 70%;
-    height: 15px;
+.socialcard {
+    display: flex;
+    width: 225px;
+    height: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid #7477BF;
+    background-color: #fbfbfb;
+}
+
+.socialinfo {
+    width: 50%;
+    height: 100px;
     margin: 0 auto;
-    text-align: center;
-    font-size: 1.8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+ 
+.socialname {
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: #4D4C72;
+}
+
+.socialsubs {
+    align-self: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4D4C72;
+}
+
+.sociallink {
+    width: 50%;
+    height: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.sociallink a {
+    width: 80px;
+    height: 80px;
+    align-self: center;
 }
 
 .fa {
-    display: inline-block;
-    padding: 20px;
-    font-size: 30px;
-    width: 30%;
+    font-size: 3em;
     text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.fa a {
-    float: right;
-    font: sans-serif;
-    text-align: center;
+    line-height: 80px;
+    border-radius: 50%;
+    color: white;
 }
 
 .fa-twitter {
-  background: #55ACEE;
-  color: white;
+    background: #55ACEE;
 }
 
 .fa-facebook {
   background: #3B5998;
-  color: white;
 }
 
 .fa-google {
   background: #dd4b39;
-  color: white;
 }
 
 .fa-reddit {
   background: #ff5700;
-  color: white;
 }
 
 .fa-instagram {
   background: #125688;
-  color: white;
 }
 
 .fa-youtube {
   background: #bb0000;
-  color: white;
 }
 
 /* New Members */
 
-.newmembers {
-    align-self: auto;
-    width: 98%;
-    height: 1000px;
-    margin: 0 auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
+ul {
+    list-style: none;
+    padding-left: 0;
 }
+
+.member {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.memberpic {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.membercontact {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+}
+
+.membername {
+    color: darkgrey;
+    font-size: .9em;
+}
+
+.memberemail {
+    font-size: .6em;
+    color: #7277be;
+}
+
+.memberdate {
+    color: darkgrey;
+    font-size: .8em;
+    margin-left: auto;
+}
+
 
 /* Recent Activity */
 
 .activity {
     align-self: auto;
     width: 98%;
-    height: 500px;
+    height: auto;
     margin: 0 auto;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
-.members {
-    list-style: none;
-    width: 100%;
-    padding: 0px;
-    overflow: auto;
-}
-
-.member {
-    display: flex;
-    width: 100%;
-    height: 100px;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.imgcontainer {
-    background-color: blue;
-    display: flex;
-    width: 25%;
-    height: 50px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.cardcontainer {
-    background-color: green;
+.cardcontainerrecent {
     display: flex;
     width: 75%;
-    height: 50px;
+    height: 40px;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    font-size: 1em;
 }
 
-.emailcontainer {
-    background-color: red;
-    display: flex;
-    width: 100%;
-    height: 50px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.memberpic {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-}
-
-.membername {
+.membernamerecent {
     width: 100%;
     text-align: center;
-    margin: 10px 15px;
+    font-size: .9em;
+    margin: 10px 0px;
+}
+
+.timecontainer {
+    width: 100%;
+    height: 20px;
+}
+
+.timeposted {
+    margin: 0px auto;
+    text-align: center;
+}
+
+.comment {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.comment p {
+    display: flex;
+    margin: 0 auto;
+}
+
+.chevron {
+    width: 24px;
+    height: 24px;
+    color: black;
+    align-self: center;
+    margin-bottom: 35px;
 }
 
 /* Message User */
@@ -467,7 +516,7 @@ textarea {
 }
 
 .sendmessage {
-    background-color: #0288D1;
+    background-color: #7477BF;
     color: white;
     width: 100%;
     margin: 0 auto;
@@ -485,13 +534,13 @@ textarea {
     display: block;
     align-self: auto;
     width: 98%;
-    height: 375px;
+    height: 500px;
     margin: 0 auto;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
-.settings h4 {
+.settingsh4 {
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
@@ -612,11 +661,11 @@ textarea {
 }
 .switch-flat .switch-input:checked ~ .switch-label {
 	background: #fff;
-	border-color: #0288D1;
+	border-color: #7477BF;
 }
 .switch-flat .switch-input:checked ~ .switch-handle {
 	left: 72px;
-	background: #0288D1;
+	background: #7477BF;
 	box-shadow: none;
 }
 
@@ -631,7 +680,7 @@ textarea {
 }
 
 .savebutton {
-    background-color: #0288D1;
+    background-color: #7477BF;
     color: white;
     width: 100%;
     margin: 0 auto;
@@ -641,12 +690,12 @@ textarea {
     cursor: pointer;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 10px;
 }
 
 .cancelbutton {
-    background-color: #0288D1;
+    background-color: #7477BF;
     color: white;
     width: 100%;
     margin: 0 auto;
@@ -657,4 +706,83 @@ textarea {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 20px;
+}
+
+/* Media Queries */ 
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      
+      /* Notification Bar */
+      
+      #borderleft {
+          width: 70%;
+      }
+      
+      .name {
+          width: 150px;
+      }
+      
+      input[type=search] {
+          width: 40%;
+      }
+      
+      input[type=search]:focus {
+            width: 70%;
+            background-image: url(../images/searchiconopacity.svg);
+      }
+      
+      /* Line Chart */
+      
+      #lineChart {
+          padding: 15px;
+      }
+      
+      /* Bar Graph */
+      
+      #bargraph {
+          padding: 15px;
+      }
+      
+      /* Social Stats */
+      
+      
+      
+      /* Recent Activity */ 
+      
+      
+      /* Settings  */
+      
+      .message {
+          width: 48%;
+          float: left;
+      }
+      
+      .sendmessage {
+          height: 50px;
+          margin-top: 5px;
+      }
+      
+      .settings {
+          width: 48%;
+          float: right;
+      }
+      
+      .savebutton,
+      .cancelbutton {
+          width: 48%;
+          height: 50px;
+          margin: 0 auto;
+      }
+      
+      .savebutton {
+          float: left;
+      }
+      
+      .settings,
+      .message {
+          height: 700px;;
+      }
 }
