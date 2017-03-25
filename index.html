@@ -25,7 +25,15 @@
         </div>
         
         <div class="icondiv">
-            <li class="icon_badge"><img src="images/icon-bell.svg" alt=""><a href=""></a></img></li>
+           <div class="dropdown">
+            <li class="icon_badge"><button onclick="myFunction()" class="dropbtn"></button></li>
+            
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">1 NEW Message!</a>
+                <a href="#">3 NEW Comments!</a>
+                <a href="#">1 NEW Post!</a>
+            </div>
+           </div>
         </div>
         
         <div id="borderleft">
@@ -81,7 +89,7 @@
                
             </div>
            
-            <canvas id="lineChart" height="200" width="320"></canvas>
+            <canvas id="lineChart" height="200" width="600"></canvas>
             
         </div>   
         
@@ -218,75 +226,52 @@
                <h2 class="chartname">Recent Activity</h2>
            </div> 
            
-            <ul class="members">
+            <ul class="membersactivity">
                
                 <li class="member">
-                   <div class="imgcontainer">
-                    <img src="images/face1.jpg" alt="" class="memberpic">
-                   </div> 
-                   
-                   <div class="cardcontainerrecent">
-                    <h4 class="membernamerecent">Victoria Chambers</h4>
-                   </div>
-                   <div class="timecontainer">   
-                    <h5 class="timeposted">4 Hours Ago</h5>
-                   </div> 
-                   <div class="comment">
-                    <p>commented on YouApp's SEO Tips<img class="chevron" src="images/ic_chevron_right_black_24px.svg" alt="small right pointing arrow"></p>
-                   </div>        
+                    <img class="memberpic" src="images/face1.jpg" alt="" />
+
+                    <div class="membercontact">
+                        <span class="membername">Victoria Chambers<span class="memberactivity"> commented on  YourApp's SEO Tips</span></span>
+                        <span class="timeposted">4 hours ago</span>
+                    </div>
+
+                    <img class="chevron" src="images/ic_chevron_right_black_24px.svg" alt="small right pointing arrow">
                 </li>
                 
                 <li class="member">
-                   <div class="imgcontainer">
-                    <img src="images/face2.jpg" alt="" class="memberpic">
-                   </div> 
-                   
-                   <div class="cardcontainerrecent">
-                    <h4 class="membernamerecent">Dale Byrd</h4>
-                   </div>
-                   <div class="timecontainer">   
-                    <h5 class="timeposted">5 Hours Ago</h5>
-                   </div> 
-                   <div class="comment">
-                    <p>liked the post Facebook's Changes for 2016<img class="chevron" src="images/ic_chevron_right_black_24px.svg" alt="small right pointing arrow"></p>
-                   </div>        
+                    <img class="memberpic" src="images/face2.jpg" alt="" />
+
+                    <div class="membercontact">
+                        <span class="membername">Dale Byrd<span class="memberactivity"> liked the post Facebook's Changes for 2017</span></span>
+                        <span class="timeposted">5 hours ago</span>
+                    </div>
+
+                    <img class="chevron" src="images/ic_chevron_right_black_24px.svg" alt="small right pointing arrow">
                 </li>
                 
                 <li class="member">
-                   <div class="imgcontainer">
-                    <img src="images/face3.jpg" alt="" class="memberpic">
-                   </div> 
-                   
-                   <div class="cardcontainerrecent">
-                    <h4 class="membernamerecent">Dawn Wood</h4>
-                   </div>
-                   <div class="timecontainer">   
-                    <h5 class="timeposted">5 Hours Ago</h5>
-                   </div> 
-                   <div class="comment">
-                    <p>Commented on Facebook's Changes for 2017<img class="chevron" src="images/ic_chevron_right_black_24px.svg" alt="small right pointing arrow"></p>
-                   </div>        
+                    <img class="memberpic" src="images/face3.jpg" alt="" />
+
+                    <div class="membercontact">
+                        <span class="membername">Dawn Wood<span class="memberactivity"> commented on Facebook's Changes for 2017</span></span>
+                        <span class="timeposted">5 hours ago</span>
+                    </div>
+
+                    <img class="chevron" src="images/ic_chevron_right_black_24px.svg" alt="small right pointing arrow">
                 </li>
                 
                 <li class="member">
-                   <div class="imgcontainer">
-                    <img src="images/face4.jpg" alt="" class="memberpic">
-                   </div> 
-                   
-                   <div class="cardcontainerrecent">
-                    <h4 class="membernamerecent">Dan Oliver</h4>
-                   </div>
-                   <div class="timecontainer">   
-                    <h5 class="timeposted">1 Day Ago</h5>
-                   </div> 
-                   <div class="comment">
-                    <p>posted YouApp's SEO Tips<img class="chevron" src="images/ic_chevron_right_black_24px.svg" alt="small right pointing arrow"></p>
-                   </div>        
+                    <img class="memberpic" src="images/face4.jpg" alt="" />
+                    <div class="membercontact">
+                        <span class="membername">Dan Oliver<span class="memberactivity"> posted YourApp's SEO Tips</span></span>
+                        <span class="timeposted">1 day ago</span>
+                    </div>
+
+                    <img class="chevron" src="images/ic_chevron_right_black_24px.svg" alt="small right pointing arrow">
                 </li>
                 
             </ul>
-            
-            
                        
         </div> 
         
@@ -317,7 +302,7 @@
             <div class="legend"> 
                <h2 class="chartname">Settings</h2>
             </div> 
-           
+              <div class="settingscontainer"> 
                <h4 class="settingsh4">Send Email Notification</h4>
                 <label class="switch switch-flat">
                     <input class="switch-input" type="checkbox" />
@@ -370,7 +355,7 @@
                 
                 <button class="savebutton" type="submit">Save</button>
                 <button class="cancelbutton" type="submit">Cancel</button>
-        
+        </div>
     </div>
     
     </div> <!--- end content_area -->

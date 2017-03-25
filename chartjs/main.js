@@ -10,39 +10,51 @@ let lineChart = new Chart(CHART, {
         {
             fill: true,
             lineTension: 0,
-            backgroundColor: "#9094fe",
-            borderColor: "purple",
+            backgroundColor: "rgba(226,227,246,.6)",
+            borderColor: "#C7C9E9",
             borderJoinStyle: 'miter',
-            pointBorderColor: "purple",
-            pointBackgroundColor: "#9094fe",
+            pointBorderColor: "#C7C9E9",
+            pointBackgroundColor: "rgba(226,227,246,1)",
             pointBorderWidth: 2,
             pointHoverRadius: 5,
             pointRadius: 7,
             pointHitRadius: 10,
-            data: [500, 1000, 750, 1250, 1750, 1250, 1500, 1000, 1500, 2000, 1500, 2000],
+            bezierCurve: false,
+            scaleOverride : true,
+            scaleSteps : 5,
+            scaleStepWidth : 500,
+            scaleStartValue : 0,
+            data: [0, 500, 1000, 750, 1250, 1750, 1250, 1500, 1000, 1500, 2000, 1500, 2000],
             spanGaps: true,
         }
     ]
   }, 
+    
+    animation: {
+            animateScale: true
+        },
     options: {
         legend: {
            display: false 
         },
+        aspectRatio: {
+           maintainAspectRatio: true  
+        },
         scales: {
             xAxes: [{
                gridLines: {
-                   offsetGridLines: true
+                   offsetGridLines: true 
                } 
             }],
             yAxes: [{
                 gridLines: {
-                   drawTicks: false
+                    drawTicks: false
+                      
                }, 
                 ticks: {
                     max: 2500,
                     min: 0,
-                    stepSize: 500,
-                    beginAtZero: true
+                    stepSize: 500
                 }
             }]
         }
@@ -119,3 +131,18 @@ const PIE = document.getElementById("mobilechart").getContext("2d");
             }
         }
 });
+
+// Dropdown Notification
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}

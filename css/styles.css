@@ -38,7 +38,7 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    
     background-color: #7477BF;
     height: 70px;
     width: 100%;
@@ -90,6 +90,8 @@ a {
     align-self: center; 
 }
 
+/* Dropdown Notification */
+
 .icondiv {
     display: flex;
     justify-content: flex-end;
@@ -100,9 +102,47 @@ a {
 
 .icon_badge {
     align-self: center;
-    width: 1.8em;
-    height: 1.8em;
+    width: 2.5em;
+    height: 2.5em;
     margin-right: 10px;
+}
+
+.dropbtn {
+    width: 3.2em;
+    height: 3.2em;
+    margin: 0 auto;
+    background-color: #7477BF;
+    background-image: url('../images/icon-bell.svg');
+    cursor: pointer;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(226,227,246,.9);
+    min-width: 160px;
+    border-radius: 3px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #4D4C72;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
 }
 
 /* Navigation */
@@ -213,10 +253,6 @@ input[type=search]:focus {
     margin-bottom: 10px;
 }
 
-#lineChart {
-    border: 1px solid #4D4C72;
-}
-
 .buttons {
     width: 100%;
     display: flex;
@@ -312,7 +348,7 @@ button {
     align-content: center;
     align-items: center;
     margin-bottom: 10px;
-    border: 1px solid #7477BF;
+    border: 1px solid rgba(226,227,246,.8);
     background-color: #fbfbfb;
 }
 
@@ -437,57 +473,27 @@ ul {
     width: 98%;
     height: auto;
     margin: 0 auto;
-    border-radius: 5px;
     margin-bottom: 10px;
 }
 
-.cardcontainerrecent {
-    display: flex;
-    width: 75%;
-    height: 40px;
-    flex-direction: row;
-    justify-content: flex-start;
+.membersactivity {
     align-items: center;
-    flex-wrap: wrap;
-    font-size: 1em;
-}
-
-.membernamerecent {
-    width: 100%;
-    text-align: center;
-    font-size: .9em;
-    margin: 10px 0px;
-}
-
-.timecontainer {
-    width: 100%;
-    height: 20px;
-}
-
-.timeposted {
-    margin: 0px auto;
-    text-align: center;
-}
-
-.comment {
-    display: flex;
-    width: 100%;
-    height: 60px;
-    text-align: left;
-    align-self: flex-start;
-}
-
-.comment p {
-    display: flex;
-    margin: 0 auto;
 }
 
 .chevron {
-    width: 24px;
-    height: 24px;
-    color: black;
-    align-self: center;
-    margin-bottom: 35px;
+   margin-left: auto;
+   width: 20px;
+   height: 20px;
+}
+
+.memberactivity {
+    color: darkgrey;
+    font-size: 1em;
+}
+
+.timeposted {
+    color: darkgrey;
+    font-size: .7em;
 }
 
 /* Message User */
@@ -498,7 +504,6 @@ ul {
     width: 100%;
     height: 375px;
     margin: 0 auto;
-    border-radius: 5px;
     margin-bottom: 10px;
 }
 
@@ -534,9 +539,8 @@ textarea {
     display: block;
     align-self: auto;
     width: 98%;
-    height: 500px;
+    height: 375px;
     margin: 0 auto;
-    border-radius: 5px;
     margin-bottom: 10px;
 }
 
@@ -715,6 +719,10 @@ textarea {
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
       
+      .container {
+          height: auto;
+      }
+      
       /* Notification Bar */
       
       #borderleft {
@@ -746,28 +754,89 @@ textarea {
           padding: 15px;
       }
       
-      /* Social Stats */
-      
-      
-      
-      /* Recent Activity */ 
-      
-      
-      /* Settings  */
-      
-      .message {
-          width: 48%;
+      .chart-2 {
+          width: 50%;
           float: left;
       }
       
+      .chart-3 {
+          width: 50%;
+          float: right;
+      }
+      
+      /* Social Stats */
+      
+      .socialstats {
+          height: 275px;
+      }
+      
+      /* New Members & Recent Activity */ 
+      
+      .newmembers,
+      .activity {
+          width: 50%;
+          height: 450px;
+      }
+      
+      .newmembers {
+          float: left;
+          border-top: solid 1px lightgrey;
+      }
+      
+      .activity {
+          float: right;
+          margin-bottom: 0px;
+          border-top: solid 1px lightgrey;
+          border-left: solid 1px lightgrey; 
+      }
+      
+      .member {
+          width: 95%;
+          height: 70px;
+          margin: 0 auto;
+      }
+      
+      .memberemail {
+          font-size: .9em;
+      }
+      
+      /* Message User & Settings  */
+      
+      #searchuser {
+          width: 100%;
+      }
+      
+      .message {
+          width: 50%;
+          float: left;
+      }
+      
+      .form {
+          width: 98%;
+      }
+      
+      .settingscontainer {
+          width: 98%;
+          height: 250px;
+          margin: 0 auto;
+          float: right;
+      }
+
       .sendmessage {
           height: 50px;
           margin-top: 5px;
       }
       
       .settings {
-          width: 48%;
+          width: 50%;
           float: right;
+          border-left: solid 1px lightgrey;
+      }
+      
+      .timezone {
+          width: 100%;
+          margin: 0 auto;
+          margin-top: 15px;
       }
       
       .savebutton,
@@ -775,14 +844,20 @@ textarea {
           width: 48%;
           height: 50px;
           margin: 0 auto;
+          margin-top: 15px;
       }
       
       .savebutton {
           float: left;
       }
       
+      .cancelbutton {
+          float: right;
+      }
+      
       .settings,
       .message {
-          height: 700px;;
+          height: 700px;
+          
       }
 }
