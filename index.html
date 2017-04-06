@@ -18,15 +18,16 @@
    
      <header>
       
-       <ul class="topbar">
+       <div class="topbar">
         
         <div class="title">
-             <li class="header_name"><span id="title_part_one">Your</span><span id="title_part_two">App&#8482;</span></li>
+            <h2 class="brandname1">Your</h2><h2 class="brandname2">App&#8482;</h2>
         </div>
         
-        <div class="icondiv">
+        
            <div class="dropdown">
-            <li class="icon_badge"><button onclick="myFunction()" class="dropbtn"></button></li>
+            
+            <button onclick="myFunction()" class="dropbtn"></button>
             
             <div id="myDropdown" class="dropdown-content">
                 <a href="#">1 NEW Message!</a>
@@ -34,14 +35,11 @@
                 <a href="#">1 NEW Post!</a>
             </div>
            </div>
-        </div>
-        
-        <div id="borderleft">
-            <li class="avatar"><a href=""><img class="avatar" src="images/beaker_avatar.jpg" alt=""></a></img></li>
-
-            <li class="name"><a href="">Beaker Muppet</a></li>
-        </div>
-       </ul>   
+           
+                <img src="images/beaker_avatar.jpg" alt="" class="avatar"/>
+                <p class="name">Robert Mullin</p>
+            
+       </div>   
         
     </header>
     
@@ -57,11 +55,13 @@
     </nav>
     
     <div class="content_area">
+        <div class="searchcontainer">
+          <h1 class="activepage">Dashboard</h1>
           
            <div class="search-bar">
             <input type="search" id="search" placeholder="Search...">
            </div>
-            
+          </div>    
           <div class="alert">
               <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
                   ALERT! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend nibh id luctus gravida.
@@ -164,6 +164,28 @@
                 <div class="socialinfo">
                     <span class="socialname">Instagram</span>
                     <span class="socialsubs">5,688</span>
+                </div>
+            </div>
+            
+            <div class="socialcard">
+                  
+                    <div class="sociallink"> 
+                        <a href="https://www.youtube.com" class="fa fa-reddit"></a>
+                    </div>
+                <div class="socialinfo">
+                    <span class="socialname">Reddit</span>
+                    <span class="socialsubs">12,584</span>
+                </div>
+            </div>
+            
+            <div class="socialcard">
+                  
+                    <div class="sociallink"> 
+                        <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+                    </div>
+                <div class="socialinfo">
+                    <span class="socialname">YouTube</span>
+                    <span class="socialsubs">15,456</span>
                 </div>
             </div>
             
@@ -358,10 +380,10 @@
         </div>
     </div>
     
-    </div> <!--- end content_area -->
+    </div> <!--- end container -->
     
-    </div> <!--- end container --->
-    
+    </div> <!--- end content_area --->
+    </div>
     <script src="chartjs/Chart.min.js"></script>
     <script src="chartjs/main.js"></script>
 

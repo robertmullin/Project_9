@@ -35,7 +35,7 @@ let lineChart = new Chart(CHART, {
         },
     options: {
         legend: {
-           display: false 
+           display: false
         },
         aspectRatio: {
            maintainAspectRatio: true  
@@ -81,8 +81,16 @@ let lineChart = new Chart(CHART, {
         },
         options: {
             legend: {
-                display: false 
+                display: false,
+                labels: {
+                    padding: 50,
+                }
             },
+            
+            layout: {
+                padding: 0,
+            },
+            
             scales: {
                 yAxes: [{
                     type: 'linear',
@@ -96,12 +104,7 @@ let lineChart = new Chart(CHART, {
                         color: '#cdcdcd'
                     }
                 }],
-                xAxes: [{
-                    gridLines: {
-                        drawTicks: false,
-                        color: '#cdcdcd'
-                    }
-                }]
+                
             }
         }
 });
@@ -112,11 +115,11 @@ const PIE = document.getElementById("mobilechart").getContext("2d");
     var mobileChart = new Chart(PIE, {
         type: 'doughnut',
         data: {
-            labels: ['Phones','Tablets','Desktops','Consoles','Laptops'],
+            labels: ['Phones','Tablets','Desktops','Laptops'],
             datasets: [
             {
-                data: [30,20,15,5,30],
-                backgroundColor: ['#73b0be','#7EBEA2','#7477BF','#4c4b71','#6699ff'],
+                data: [35,20,15,30],
+                backgroundColor: ['#73b0be','#7EBEA2','#7477BF','#6699ff'],
             }
             ]},
         
@@ -127,7 +130,14 @@ const PIE = document.getElementById("mobilechart").getContext("2d");
                 }
             },
             legend: {
-                display: false
+                display: true,
+                position: 'right',
+                labels: {
+                    fontFamily: "'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+                    fontSize: 20, 
+                    boxWidth: 20,
+                    boxHeight: 30
+                }
             }
         }
 });
