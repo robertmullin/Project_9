@@ -711,6 +711,11 @@ textarea {
           width: 150px;
       }
       
+      .dropdown-content {
+        margin-top: 35px;
+        margin-left: 70px;
+      }
+    
       input[type=search] {
           width: 40%;
       }
@@ -735,11 +740,16 @@ textarea {
       .chart-2 {
           width: 50%;
           float: left;
+          border-top: solid 1px lightgrey;
+          border-bottom: solid 1px lightgrey;
       }
       
       .chart-3 {
           width: 50%;
           float: right;
+          border-top: solid 1px lightgrey;
+          border-left: solid 1px lightgrey;
+          border-bottom: solid 1px lightgrey;
       }
       
       /* Social Stats */
@@ -840,17 +850,6 @@ textarea {
           height: 450px; 
       }
     
-      
-    .chart-2 {
-        border-top: solid 1px lightgrey;
-        border-bottom: solid 1px lightgrey;
-    }
-    
-    .chart-3 {
-        border-top: solid 1px lightgrey;
-        border-left: solid 1px lightgrey;
-        border-bottom: solid 1px lightgrey;
-    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -863,7 +862,7 @@ textarea {
     #borderleft {
         width: 20%;
     }
-   
+    
     .icondiv {
         width: 20%;
     }
@@ -921,6 +920,11 @@ textarea {
 }
 
 @media screen and (min-width: 1400px) {
+    
+    .dropdown-content {
+        margin-top: 35px;
+        margin-left: 70px;
+    }
     
     .socialcard {
         width: 16%;
