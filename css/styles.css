@@ -105,7 +105,7 @@ a {
     margin: 0 auto;
     background-color: #7477BF;
     background-image: url(../images/icon-bell.svg);
-    background-position: center center no-repeat;
+    background-position: center;
     background-size: contain;
     color: white;
     cursor: pointer;
@@ -302,7 +302,6 @@ button {
 /* Daily Traffic Chart */
 
 .dailytraffic {
-    background-color: ;
     align-self: center;
     width: 98%;
     margin: 0 auto;
@@ -313,7 +312,6 @@ button {
 /* Mobile Users Chart */
 
 .mobileusers {
-    background-color: ;
     align-self: auto;
     width: 98%;
     height: auto;
