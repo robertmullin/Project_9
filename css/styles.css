@@ -1,6 +1,11 @@
 /* color light #0288D1 */
+
+
 /* color dark #4D4C72 */
+
+
 /* color dark #7477BF */
+
 
 /*
 * { outline: 2px dotted red }
@@ -22,16 +27,17 @@ body {
     color: #797e83;
     font-size: 16px;
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.5; 
+    line-height: 1.5;
     padding: 0;
     margin: 0 auto;
 }
 
 a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 400; 
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
 }
+
 
 /* Notification Bar */
 
@@ -84,9 +90,10 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 30px;
-    align-self: center; 
+    align-self: center;
     margin-left: 15px;
 }
+
 
 /* Dropdown Notification */
 
@@ -95,7 +102,7 @@ a {
     justify-content: center;
     align-content: center;
     height: 50px;
-    width: 10%; 
+    width: 10%;
     border-right: solid 1px #4D4C72;
 }
 
@@ -119,10 +126,10 @@ a {
     position: absolute;
     margin-top: 32px;
     margin-left: 40px;
-    background-color: rgba(226,227,246,.9);
+    background-color: rgba(226, 227, 246, .9);
     min-width: 100px;
     border-radius: 3px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
@@ -137,6 +144,7 @@ a {
     display: block;
 }
 
+
 /* Navigation */
 
 .main-nav {
@@ -148,10 +156,9 @@ a {
     background-color: #4D4C72;
 }
 
-
 .main-nav li {
-   width: 30px;
-   height: 30px;    
+    width: 30px;
+    height: 30px;
 }
 
 .main-nav a {
@@ -159,9 +166,9 @@ a {
     width: 70px;
     height: 70px;
     text-align: center;
-    padding: 16px; 
-    transition: all 0.3s ease; 
-    color: white; 
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
     font-size: 30px;
 }
 
@@ -170,6 +177,7 @@ a {
     border-radius: 4px;
     border-left-width: medium;
 }
+
 
 /* Search Bar */
 
@@ -215,7 +223,8 @@ input[type=search]:focus {
     margin-top: 70px;
 }
 
- /* The Alert Box */
+
+/* The Alert Box */
 
 .alert {
     width: 98%;
@@ -224,7 +233,7 @@ input[type=search]:focus {
     background-color: #7477BF;
     color: white;
     margin: 0 auto;
-    margin-bottom: .5em; 
+    margin-bottom: .5em;
     border-radius: 5px;
 }
 
@@ -242,6 +251,7 @@ input[type=search]:focus {
 .closebtn:hover {
     color: darkblue;
 }
+
 
 /* Traffic Chart */
 
@@ -272,7 +282,7 @@ input[type=search]:focus {
     text-align: center;
     text-transform: uppercase;
     align-self: center;
-    font-size: 1.6em; 
+    font-size: 1.6em;
 }
 
 .tabs {
@@ -299,6 +309,7 @@ button {
     border-radius: 25px;
 }
 
+
 /* Daily Traffic Chart */
 
 .dailytraffic {
@@ -308,6 +319,7 @@ button {
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
 
 /* Mobile Users Chart */
 
@@ -319,6 +331,7 @@ button {
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
 
 /* Social Stats */
 
@@ -343,7 +356,7 @@ button {
     align-content: center;
     align-items: center;
     margin-bottom: 10px;
-    border: 1px solid rgba(226,227,246,.8);
+    border: 1px solid rgba(226, 227, 246, .8);
     background-color: #fbfbfb;
 }
 
@@ -357,7 +370,7 @@ button {
     align-content: center;
     justify-content: center;
 }
- 
+
 .socialname {
     font-size: 1.5em;
     font-weight: lighter;
@@ -403,6 +416,7 @@ button {
     width: 40px;
     height: 40px;
 }
+
 
 /* New Members */
 
@@ -470,9 +484,9 @@ ul {
 }
 
 .chevron {
-   margin-left: auto;
-   width: 20px;
-   height: 20px;
+    margin-left: auto;
+    width: 20px;
+    height: 20px;
 }
 
 .memberactivity {
@@ -485,6 +499,7 @@ ul {
     font-size: .7em;
 }
 
+
 /* Message User */
 
 .message {
@@ -496,13 +511,13 @@ ul {
     margin-bottom: 10px;
 }
 
-input, 
+input,
 textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px; 
-    box-sizing: border-box; 
+    border-radius: 5px;
+    box-sizing: border-box;
     margin-top: 5px;
     margin-bottom: 5px;
     resize: vertical;
@@ -522,6 +537,7 @@ textarea {
     text-transform: uppercase;
 }
 
+
 /* Settings */
 
 .settings {
@@ -540,126 +556,136 @@ textarea {
 }
 
 .switch {
-	position: relative;
-	display: block;
-	vertical-align: top;
-	width: 100px;
-	height: 30px;
-	padding: 3px;
-	margin: 0 auto;
-	background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);
-	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
-	border-radius: 18px;
-	box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
-	cursor: pointer;
-	box-sizing:content-box;
+    position: relative;
+    display: block;
+    vertical-align: top;
+    width: 100px;
+    height: 30px;
+    padding: 3px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);
+    background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
+    border-radius: 18px;
+    box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    box-sizing: content-box;
     margin-bottom: 10px;
 }
 
 .switch-input {
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0;
-	box-sizing:content-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    box-sizing: content-box;
 }
 
 .switch-label {
-	position: relative;
-	display: block;
-	height: inherit;
-	font-size: 10px;
-	text-transform: uppercase;
-	background: #eceeef;
-	border-radius: inherit;
-	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
-	box-sizing:content-box;
+    position: relative;
+    display: block;
+    height: inherit;
+    font-size: 10px;
+    text-transform: uppercase;
+    background: #eceeef;
+    border-radius: inherit;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+    box-sizing: content-box;
 }
 
-.switch-label:before, .switch-label:after {
-	position: absolute;
-	top: 50%;
-	margin-top: -.5em;
-	line-height: 1;
-	-webkit-transition: inherit;
-	-moz-transition: inherit;
-	-o-transition: inherit;
-	transition: inherit;
-	box-sizing:content-box;
+.switch-label:before,
+.switch-label:after {
+    position: absolute;
+    top: 50%;
+    margin-top: -.5em;
+    line-height: 1;
+    -webkit-transition: inherit;
+    -moz-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
+    box-sizing: content-box;
 }
 
 .switch-label:before {
-	content: attr(data-off);
-	right: 11px;
-	color: #aaaaaa;
-	text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    content: attr(data-off);
+    right: 11px;
+    color: #aaaaaa;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
 }
 
 .switch-label:after {
-	content: attr(data-on);
-	left: 11px;
-	color: #fff;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.2);
-	opacity: 0;
+    content: attr(data-on);
+    left: 11px;
+    color: #fff;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    opacity: 0;
 }
 
-.switch-input:checked ~ .switch-label:before {
-	opacity: 0;
+.switch-input:checked~.switch-label:before {
+    opacity: 0;
 }
-.switch-input:checked ~ .switch-label:after {
-	opacity: 1;
+
+.switch-input:checked~.switch-label:after {
+    opacity: 1;
 }
+
 .switch-handle {
-	position: absolute;
-	top: 4px;
-	left: 4px;
-	width: 28px;
-	height: 28px;
-	background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
-	background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
-	border-radius: 100%;
-	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+    background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+    border-radius: 100%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
-.switch-label, .switch-handle {
-	transition: All 0.3s ease;
-	-webkit-transition: All 0.3s ease;
-	-moz-transition: All 0.3s ease;
-	-o-transition: All 0.3s ease;
+.switch-label,
+.switch-handle {
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
 }
 
 .switch-flat {
-	padding: 0;
-	background: #FFF;
-	background-image: none;
+    padding: 0;
+    background: #FFF;
+    background-image: none;
 }
+
 .switch-flat .switch-label {
-	background: #fff;
-	border: solid 2px #eceeef;
-	box-shadow: none;
+    background: #fff;
+    border: solid 2px #eceeef;
+    box-shadow: none;
 }
+
 .switch-flat .switch-label:after {
-	color: #0288D1;
+    color: #0288D1;
 }
+
 .switch-flat .switch-handle {
-	top: 6px;
-	left: 6px;
-	background: #dadada;
-	width: 22px;
-	height: 22px;
-	box-shadow: none;
+    top: 6px;
+    left: 6px;
+    background: #dadada;
+    width: 22px;
+    height: 22px;
+    box-shadow: none;
 }
+
 .switch-flat .switch-handle:before {
-	background: #eceeef;
+    background: #eceeef;
 }
-.switch-flat .switch-input:checked ~ .switch-label {
-	background: #fff;
-	border-color: #7477BF;
+
+.switch-flat .switch-input:checked~.switch-label {
+    background: #fff;
+    border-color: #7477BF;
 }
-.switch-flat .switch-input:checked ~ .switch-handle {
-	left: 72px;
-	background: #7477BF;
-	box-shadow: none;
+
+.switch-flat .switch-input:checked~.switch-handle {
+    left: 72px;
+    background: #7477BF;
+    box-shadow: none;
 }
 
 .timezone {
@@ -701,181 +727,144 @@ textarea {
     margin-bottom: 20px;
 }
 
-/* Media Queries */ 
+
+/* Media Queries */
 
 @media screen and (min-width: 768px) {
-      
-      .container {
-          height: auto;
-      }
-      
-      /* Notification Bar */
-      
-      #borderleft {
-          width: 70%;
-      }
-      
-      .name {
-          width: 150px;
-      }
-      
-      .dropdown-content {
+    .container {
+        height: auto;
+    }
+    /* Notification Bar */
+    #borderleft {
+        width: 70%;
+    }
+    .name {
+        width: 150px;
+    }
+    .dropdown-content {
         margin-top: 35px;
         margin-left: 70px;
-      }
-    
-      input[type=search] {
-          width: 100%;
-          background-image: url(../images/searchiconopacity.svg);
-      }
-      
-      input[type=search]:focus {
-            width: 100%;
-            background-image: none;
-      }
-      
-      /* Line Chart */
-      
-      #lineChart {
-          padding: 15px;
-      }
-      
-      /* Bar Graph */
-      
-      #bargraph {
-          padding: 15px;
-      }
-      
-      .chart-2 {
-          width: 50%;
-          float: left;
-          border-top: solid 1px lightgrey;
-          border-bottom: solid 1px lightgrey;
-      }
-      
-      .chart-3 {
-          width: 50%;
-          float: right;
-          border-top: solid 1px lightgrey;
-          border-left: solid 1px lightgrey;
-          border-bottom: solid 1px lightgrey;
-      }
-      
-      /* Social Stats */
-      
-      .socialstats {
-          height: 275px;
-      }
-      
-      /* New Members & Recent Activity */ 
-      
-      .newmembers,
-      .activity {
-          width: 50%;
-          height: 450px;
-      }
-      
-      .newmembers {
-          float: left;
-          border-top: solid 1px lightgrey;
-      }
-      
-      .activity {
-          float: right;
-          margin-bottom: 0px;
-          border-top: solid 1px lightgrey;
-          border-left: solid 1px lightgrey; 
-      }
-      
-      .member {
-          width: 95%;
-          height: 70px;
-          margin: 0 auto;
-      }
-      
-      .memberemail {
-          font-size: .9em;
-      }
-      
-      /* Message User & Settings  */
-      
-      #searchuser {
-          width: 100%;
-      }
-      
-      .message {
-          width: 49%;
-          float: left;
-          margin-left: 1%;
-      }
-      
-      .form {
-          width: 98%;
-      }
-      
-      .settingscontainer {
-          width: 98%;
-          height: 250px;
-          margin: 0 auto;
-          float: right;
-      }
-
-      .sendmessage {
-          height: 50px;
-          margin-top: 5px;
-      }
-      
-      .settings {
-          width: 49%;
-          float: right;
-          margin-right: 1%;
-          border-left: solid 1px lightgrey;
-      }
-      
-      .timezone {
-          width: 100%;
-          margin: 0 auto;
-          margin-top: 15px;
-      }
-      
-      .savebutton,
-      .cancelbutton {
-          width: 48%;
-          height: 50px;
-          margin: 0 auto;
-          margin-top: 15px;
-      }
-      
-      .savebutton {
-          float: left;
-      }
-      
-      .cancelbutton {
-          float: right;
-      }
-      
-      .settings,
-      .message {
-          height: 450px; 
-      }
-    
+    }
+    input[type=search] {
+        width: 100%;
+        background-image: url(../images/searchiconopacity.svg);
+    }
+    input[type=search]:focus {
+        width: 100%;
+        background-image: none;
+    }
+    /* Line Chart */
+    #lineChart {
+        padding: 15px;
+    }
+    /* Bar Graph */
+    #bargraph {
+        padding: 15px;
+    }
+    .chart-2 {
+        width: 50%;
+        float: left;
+        border-top: solid 1px lightgrey;
+        border-bottom: solid 1px lightgrey;
+    }
+    .chart-3 {
+        width: 50%;
+        float: right;
+        border-top: solid 1px lightgrey;
+        border-left: solid 1px lightgrey;
+        border-bottom: solid 1px lightgrey;
+    }
+    /* Social Stats */
+    .socialstats {
+        height: 275px;
+    }
+    /* New Members & Recent Activity */
+    .newmembers,
+    .activity {
+        width: 50%;
+        height: 450px;
+    }
+    .newmembers {
+        float: left;
+        border-top: solid 1px lightgrey;
+    }
+    .activity {
+        float: right;
+        margin-bottom: 0px;
+        border-top: solid 1px lightgrey;
+        border-left: solid 1px lightgrey;
+    }
+    .member {
+        width: 95%;
+        height: 70px;
+        margin: 0 auto;
+    }
+    .memberemail {
+        font-size: .9em;
+    }
+    /* Message User & Settings  */
+    #searchuser {
+        width: 100%;
+    }
+    .message {
+        width: 49%;
+        float: left;
+        margin-left: 1%;
+    }
+    .form {
+        width: 98%;
+    }
+    .settingscontainer {
+        width: 98%;
+        height: 250px;
+        margin: 0 auto;
+        float: right;
+    }
+    .sendmessage {
+        height: 50px;
+        margin-top: 5px;
+    }
+    .settings {
+        width: 49%;
+        float: right;
+        margin-right: 1%;
+        border-left: solid 1px lightgrey;
+    }
+    .timezone {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .savebutton,
+    .cancelbutton {
+        width: 48%;
+        height: 50px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .savebutton {
+        float: left;
+    }
+    .cancelbutton {
+        float: right;
+    }
+    .settings,
+    .message {
+        height: 450px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-    
     .wrapper {
         width: 100%;
         margin: 0 auto;
     }
-    
     #borderleft {
         width: 20%;
     }
-    
     .icondiv {
         width: 20%;
     }
-    
     .searchcontainer {
         display: flex;
         width: 100%;
@@ -885,7 +874,6 @@ textarea {
         align-items: center;
         justify-content: center;
     }
-    
     .activepage {
         display: flex;
         width: 15%;
@@ -894,7 +882,6 @@ textarea {
         font-size: 1.6em;
         justify-content: center;
     }
-    
     .search-bar {
         display: flex;
         width: 85%;
@@ -905,38 +892,30 @@ textarea {
         border-left: solid 1px lightgrey;
         border-bottom: solid 1px lightgrey;
     }
-    
     #search {
         margin-right: 1%;
     }
-    
     .searchcontainer {
         margin-bottom: 25px;
     }
-    
     .legend {
         justify-content: flex-start;
     }
-    
     .tabs {
         display: flex;
         justify-content: flex-end;
     }
-    
     .socialcard {
         width: 30%;
     }
 }
 
 @media screen and (min-width: 1400px) {
-    
     .dropdown-content {
         margin-top: 35px;
         margin-left: 70px;
     }
-    
     .socialcard {
         width: 16%;
     }
-    
 }
