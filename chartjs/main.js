@@ -156,3 +156,16 @@ window.onclick = function(e) {
       }
   }
 };
+
+// Form Validation
+
+function validateForm(){
+    
+    var a = document.forms["messageForm"]["userSearch"].value;
+    var b = document.forms["messageForm"]["message"].value;
+    
+    if (a==null || a=="",b==null || b==""){
+      alert("Please fill out all fields.");
+      return false;
+      }
+    }
