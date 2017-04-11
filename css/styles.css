@@ -4,7 +4,7 @@
 /* color dark #4D4C72 */
 
 
-/* color dark #7477BF */
+/* color base #7477BF */
 
 
 /*
@@ -222,7 +222,6 @@ input[type=search]:focus {
     margin-left: 70px;
     margin-top: 70px;
 }
-
 
 /* The Alert Box */
 
@@ -535,6 +534,51 @@ textarea {
     cursor: pointer;
     text-align: center;
     text-transform: uppercase;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #7477BF;
+    color: white;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 25% auto;
+    padding: 5px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.close {
+    color: white;
+    float: right;
+    margin-right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #4D4C72;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -894,6 +938,11 @@ textarea {
     }
     #search {
         margin-right: 1%;
+        width: 30%;
+    }
+    #search:focus {
+        width: 70%;
+        background-image: url(../images/searchiconopacity.svg);
     }
     .searchcontainer {
         margin-bottom: 25px;

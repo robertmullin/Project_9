@@ -162,13 +162,30 @@ window.onclick = function (e) {
 
 // Form Validation
 
-function validateForm() {
+var search = document.getElementById('searchUser');
+var message = document.getElementById('message');
+var error = document.getElementById('myModal1');
+var success = document.getElementById('myModal2');
+var span = document.getElementsByClassName("close")[0];
+var close = document.getElementsByClassName("close")[1];
 
-    var a = document.forms["messageForm"]["userSearch"].value;
-    var b = document.forms["messageForm"]["message"].value;
+document.getElementById("sendButton").addEventListener('click', function(){
+    
+    event.preventDefault(); 
+    
+	if(search.value === '' || message.value === '') {
+		error.style.display = 'block';
+	} else {
+		success.style.display = 'block';
+	}
+});
 
-    if (a == null || a == "", b == null || b == "") {
-        alert("Please fill out all fields.");
-        return false;
-    }
-}
+// Close the modal with 'X' symbol
+
+span.onclick = function() {
+    error.style.display = "none";
+};
+
+close.onclick = function() {
+    success.style.display = "none";
+};
